@@ -320,7 +320,7 @@
             border-radius: 999px;
             font-weight: 500;
         }
-        @media (max-width: 768px) {
+@media (max-width: 768px) {
             nav {
                 display: none;
             }
@@ -336,17 +336,18 @@
             .timeline-step::after {
                 display: none;
             }
-    .hero {
-        height: 60vh; /* או 70vh לפי הרצון שלך */
-		        overflow: visible; /* מאפשר לתוכן לצאת החוצה */
-
-    }
-
-    .hero img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
+            .hero {
+                padding: 80px 0 100px;
+                min-height: auto; /* מאפשר לתוכן לקבוע את הגובה */
+            }
+            .hero img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+            .hero .container {
+                grid-template-columns: 1fr; /* עמודה אחת במקום שתיים */
+            }
         }
         @keyframes float {
             from { transform: translateY(0); }
