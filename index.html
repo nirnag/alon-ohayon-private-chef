@@ -337,19 +337,23 @@
                 display: none;
             }
             .hero {
-                padding: 80px 0 100px;
-                min-height: 500px; /* גובה מינימלי לתמונה */
+                padding: 60px 0 80px;
+                min-height: 70vh;
             }
             .hero img {
                 object-fit: cover;
                 height: 100%;
-                width: 100vw; /* רוחב מלא של המסך */
-                left: 50%;
-                right: auto;
-                transform: translateX(-50%); /* ממרכז את התמונה */
+                width: 100%;
             }
             .hero .container {
-                grid-template-columns: 1fr; /* עמודה אחת במקום שתיים */
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
             }
         }
         @keyframes float {
