@@ -338,12 +338,15 @@
             }
             .hero {
                 padding: 80px 0 100px;
-                min-height: auto; /* מאפשר לתוכן לקבוע את הגובה */
+                min-height: 500px; /* גובה מינימלי לתמונה */
             }
             .hero img {
                 object-fit: cover;
                 height: 100%;
-                width: 100%;
+                width: 100vw; /* רוחב מלא של המסך */
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%); /* ממרכז את התמונה */
             }
             .hero .container {
                 grid-template-columns: 1fr; /* עמודה אחת במקום שתיים */
