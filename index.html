@@ -337,18 +337,26 @@
                 display: none;
             }
     .hero {
-        padding: 60px 0 80px; /* מרווחים נוחים למובייל */
-        height: auto; /* לא חוסמים את הטקסט */
+        position: relative;
+        min-height: 60vh; /* גובה התמונה המושלמת שהיית מרוצה ממנו */
+        padding-bottom: 40px; /* כדי שהטקסט יקבל מקום לרדת */
+        overflow: visible; /* חשוב! */
     }
 
     .hero img {
-        height: 55vh; /* גובה מאוזן לתמונה */
+        position: absolute;
+        inset: 0;
         width: 100%;
+        height: 60vh; /* אותו גובה קבוע של התמונה */
         object-fit: cover;
         object-position: center;
-        position: absolute;
-        top: 0;
-        left: 0;
+        z-index: -1; /* כדי שהטקסט יישב מעל התמונה */
+    }
+
+    .hero .container {
+        position: relative;
+        z-index: 2; /* טקסט תמיד מעל */
+        padding-top: 20px; /* שהטקסט לא יתחיל על הרקע כהה מדי */
     }
         }
         @keyframes float {
