@@ -320,7 +320,22 @@
             border-radius: 999px;
             font-weight: 500;
         }
-@media (max-width: 768px) {
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            header .container {
+                justify-content: space-between;
+            }
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            .timeline {
+                border: none;
+            }
+            .timeline-step::after {
+                display: none;
+            }
     .hero {
         padding: 60px 0 80px; /* מרווחים נוחים למובייל */
         height: auto; /* לא חוסמים את הטקסט */
@@ -335,7 +350,7 @@
         top: 0;
         left: 0;
     }
-}
+        }
         @keyframes float {
             from { transform: translateY(0); }
             to { transform: translateY(-12px); }
