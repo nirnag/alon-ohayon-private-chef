@@ -339,9 +339,6 @@
             .hero {
                 padding: 100px 0 120px;
             }
-			    .hero img {
-        content: url("alon-ohayon-mobile.jpg");
-    }
         }
         @keyframes float {
             from { transform: translateY(0); }
@@ -718,7 +715,10 @@
     </header>
 
     <section class="hero">
-        <img src="alon-ohayon.jpg" alt="Alon Ohayon Private Chef">
+<picture>
+  <source media="(max-width: 768px)" srcset="alon-ohayon-mobile.jpg">
+  <img src="alon-ohayon.jpg" alt="Alon Ohayon Private Chef">
+</picture>
         <div class="container">
             <div>
                 <div class="badge">חוויה קולינרית פרטית • מותאם אישית אליכם</div>
